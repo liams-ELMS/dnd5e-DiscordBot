@@ -31,7 +31,7 @@ def main():
     # O = n
     for guild in bot.guilds:
       print(f"- {guild.name}")
-    general_channel = bot.get_channel(1093615851086823457) 
+    general_channel = bot.get_channel() # Needs a Channel Code to work!
     await general_channel.send('Hello, world! Type !help for my commands!')
       
   @bot.event
@@ -454,7 +454,7 @@ def main():
 #~~~~~End !roll~~~~~#
 
   # Runs the bot
-  bot.run("MTA5MzYxNDA1MTE3Njc1OTM5Ng.Gn-KGR.XYgUXfDSLiqykhzC2Hlh38SlAMuV6bKWKx4Hqg")
+  bot.run() #Need a Discord Bot Token Here!
 
 #~~~~~End main()~~~~~#
 
